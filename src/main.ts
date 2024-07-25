@@ -22,6 +22,6 @@ async function bootstrap() {
   app.enableCors(); // esto es para elimanar el problema de bloqueo de cors
   //  origin: 'http://localhots.com'; // esto es un ejemplo, haciendo esto atorizamos que dominio tiene permitido perdir los datos al backend
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
